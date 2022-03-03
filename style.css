@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box;
+    border:dashed; */
+    }
+
+body {
+    background-color:rgb(80, 80, 80);
+    font-family: 'Comfortaa', cursive;
+}
+/* the main container */
+
+.card{
+ width:70%;
+ height:150%;
+ /* width: 400px; */
+ /*height: 750px;*/
+  margin: 3em auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161694;
+  background-color:rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+.front-card{
+
+  background-image: url('assets/background.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.back-card{
+  background-image: url('assets/background.png');
+  background-position: center;
+  background-size:cover;
+}
+h1{
+  /* to left align text */
+  font-size: 30pt;
+
+}
+  
+  h3{
+    font-size: 3em;
+    font-family: 'Comfortaa', cursive;
+  }
+  
+  h5{
+    font-size: 1em;
+    font-family: 'Comfortaa', cursive;
+}
+
+.front-text {
+  margin-top: 50%;
+  margin-left:5%;
+}
+ 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-container{
+  margin-left: 5%;
+  margin-bottom: 2%;
+
+}
+
+.icon-container{
+  width:100%;
+  margin-left: 5%;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+
+img:hover{
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/* animation */
+.fade{
+  animation: fade 5s infinite
+}
+
+
+@keyframes fade{
+  from{
+      fill:rgba(15, 224, 207);
+  }
+  to{
+      fill:rgba(251, 72, 196)
+  }
+}
